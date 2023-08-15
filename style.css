@@ -1,0 +1,50 @@
+html{
+	text-align:center;
+    align-items:left;
+    background-color: white;
+    border: none;
+}
+input[type=text],input[type=password] {
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid #bedbbb;
+  text-align: center;
+  border-radius:10px;
+  color: white;
+  background-color: #bedbbb;
+  }
+table{
+     border-collapse: collapse;
+     width: 50%;
+     margin:50px auto;
+     background-color: burlywood;
+    }
+
+table, th, td 
+{
+	width:50%;
+	height:30px;
+	border:2px solid black;
+} 
+  
+  th {
+  	width:20px;
+  	font-size:20px;
+    font-weight:700;
+    font-family: Arial;
+    color: #004d00;
+  }
+ td {
+ 	font-size: 15px;
+ 	color: crimson ;
+ 	font-weight: 10px;
+
+ }
+
+div{
+  margin-left: 2rem;
+  margin-top: 2rem;
+} 
+ 

@@ -1,0 +1,52 @@
+<!DOCTYPWE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+
+<body>
+	<form onsubmit="event.preventDefault();FormSubmit();">
+   
+    <label  for="uname"><b>Username *</b></label><br>
+    <input  type="text"  name="uname" id="uname"><br>
+     
+    <label for="lastname"><b>Last Name *</b></label><br>
+    <input type="text"  name="lastname"  id="lastname"><br>
+       
+    <label for="Email"><b>Email Id *</b></label><br>
+    <input type="text" name="Email" id ="Email"><br>
+       
+    <label for="Mobile"><b>Mobile Number *</b></label><br>
+    <input type="text"  name="Mobile" id="Mobile"><br><br>
+      
+    <input type="text"  id="companyname" placeholder="Enter Company Name"><br>
+
+    <input type="text" name="input" id="serialNo" placeholder="Enter serial No."><br>
+
+    <button  id="Entry" type="submit" method=" submit">Submit</button> 
+  <div> 
+    <input type="text"  id="search" onkeyup="searchTable()" placeholder="search for name"></input>
+   <select id="CompanyName" onclick="CName()"> 
+  </select> 
+</div>
+
+</form>
+
+<table id="show_display">
+	<tr>
+    <th>SerialNo.</th>
+	<th onclick="sortTable(0)"> User Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+	<th onclick="sortTable(1)"> Last Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+	<th onclick="sortTable(2)"> Email Id<i class="fa fa-sort" aria-hidden="true"></i></th>
+    <th onclick="NumbersortTable(3)"> Mobile Number <i class="fa fa-sort" aria-hidden="true"></i> </th>
+    <th>CompanyName</th>
+    <th>Date_Time</th>
+    <th></th>
+</tr>
+
+</table>
+<script type="text/javascript" src="get_value.js"></script>
+</body>
+</html>
